@@ -1,0 +1,28 @@
+<%- include("./partials/navbar.ejs") %>
+
+<div class="home_section">
+    <div class="container">
+        <form id="form" action="/" method="post">
+            <input placeholder="Heading" type="text" name="headline" id="headline">
+            <textarea placeholder="put your notes" name="desc" id="desc" cols="30" rows="5"></textarea>
+            <div class="btn_section">
+                <button class="btn" type="submit">
+                    <i class="fa fa-plus fa-2x"></i>
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <div class="notes_section">
+        <% result.forEach((post) => { %>
+            <div class="notes_container">
+                <div class="notes_contents">
+                    <h1><%= post.headline %></h1>
+                    <p><%= post.desc.substring(0, 100) + '...'%><a href="/note/<%= post.headline %>">read more</a></p>
+                </div>
+            </div>
+        <% }) %>
+    </div>
+</div>
+
+<%- include("./partials/footer.ejs") %>

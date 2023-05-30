@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    background-color: #27374D;
+    padding: 1.5rem;
+}
+
+.navbar #logo {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+}
+
+.home_section {
+    margin: 3rem 0;
+}
+
+.home_section .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home_section .container #form {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+#headline {
+    margin: 1rem 0;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 25px;
+    border: 1px solid #a19999ee;
+    text-align: center;
+}
+
+#desc {
+    padding: 1rem;
+    border: 1px solid #a19999ee;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+}
+
+.btn_section {
+    margin: 1.5rem 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.btn_section .btn {
+    padding: 0.5rem;
+    border-radius: 25px;
+    border: 1px solid #a19999ee;
+    cursor: pointer;
+}
+
+.notes_section {
+    margin: 2.5rem 5rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.notes_container {
+    width: 400px;
+    height: auto;
+    padding: 1rem;
+    border: 1px solid #a19999ee;
+    margin: 0 1rem;
+    box-shadow: 9px 11px 5px 0px rgba(221, 230, 237, 0.75);
+    -webkit-box-shadow: 9px 11px 5px 0px rgba(221, 230, 237, 0.75);
+    -moz-box-shadow: 9px 11px 5px 0px rgba(221, 230, 237, 0.75);
+}
+
+.footer_main {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+    color: white;
+    background-color: #27374D;
+    padding: 1rem 0;
+    font-weight: 200;
+}
